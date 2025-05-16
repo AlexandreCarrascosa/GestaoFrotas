@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reserva de Veículo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <form id="reservaForm">
+    <input name="placa" placeholder="Placa" required />
+    <input name="solicitante" placeholder="Solicitante" required />
+    <input name="motorista" placeholder="Motorista" required />
+    <input name="motivo" placeholder="Motivo" required />
+    <input name="gestor" placeholder="Gestor Responsável" required />
+    
+    <label>Data Retirada</label>
+    <input type="date" name="data_retirada" required />
+    <input type="time" name="hora_retirada" required />
+    
+    <label>Data Devolução</label>
+    <input type="date" name="data_devolucao" required />
+    <input type="time" name="hora_devolucao" required />
+    
+    <button type="submit">Reservar</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

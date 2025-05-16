@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+pydantic
+gspread
+oauth2client
+python-multipart
