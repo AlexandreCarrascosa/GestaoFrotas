@@ -6,24 +6,52 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="container">
+    <div class="header-container">
+      <h2>Reserva de Veículo</h2>
+      <button id="toggle-theme">🌞 Mudar tema</button>
+    </div>
   <form id="reservaForm">
-    <input name="placa" placeholder="Placa" required />
-    <input name="solicitante" placeholder="Solicitante" required />
-    <input name="motorista" placeholder="Motorista" required />
-    <input name="motivo" placeholder="Motivo" required />
-    <input name="gestor" placeholder="Gestor Responsável" required />
-    
-    <label>Data Retirada</label>
-    <input type="date" name="data_retirada" required />
-    <input type="time" name="hora_retirada" required />
-    
-    <label>Data Devolução</label>
-    <input type="date" name="data_devolucao" required />
-    <input type="time" name="hora_devolucao" required />
-    
-    <button type="submit">Reservar</button>
+    <div class="form-group">
+      <label>Placa</label>
+      <input name="placa" required>
+    </div>
+    <div class="form-group">
+      <label>Solicitante</label>
+      <input name="solicitante" required>
+    </div>
+    <div class="form-group">
+      <label>Motorista</label>
+      <input name="motorista" required>
+    </div>
+    <div class="form-group">
+      <label>Motivo</label>
+      <input name="motivo" required>
+    </div>
+    <div class="form-group">
+      <label>Gestor Responsável</label>
+      <input name="gestor" required>
+    </div>
+    <div class="form-group">
+      <label>Data Retirada</label>
+      <input type="date" name="data_retirada" required>
+    </div>
+    <div class="form-group">
+      <label>Hora Retirada</label>
+      <input type="time" name="hora_retirada" required>
+    </div>
+    <div class="form-group">
+      <label>Data Devolução</label>
+      <input type="date" name="data_devolucao" required>
+    </div>
+    <div class="form-group">
+      <label>Hora Devolução</label>
+      <input type="time" name="hora_devolucao" required>
+    </div>
+    <button type="submit">Enviar Reserva</button>
   </form>
+</div>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
