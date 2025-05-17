@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const form = new FormData(this);
       const data = Object.fromEntries(form.entries());
 
-      const res = await fetch('http://localhost:5050/api/reserva', {
+      const res = await fetch('https://gestaofrotas-g05f.onrender.com/api/reserva', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
@@ -31,7 +31,7 @@ Hora da Retirada: ${data.hora_retirada}
 Data da Devolução: ${data.data_devolucao}
 Hora da Devolução: ${data.hora_devolucao}
         `;
-        const whatsappUrl = `https://wa.me/5566996916035?text=${encodeURIComponent(msg)}`;
+        const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(msg)}`;
         window.open(whatsappUrl, '_blank');
       } else {
         alert("Erro ao enviar reserva.");
